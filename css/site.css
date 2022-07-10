@@ -1,0 +1,31 @@
+:root {
+  --bg: #fafafa;
+  --font: "Quicksand", sans-serif;
+  --font-display: "Quicksand", sans-serif;
+  --hotpink: #e94057;
+  --orange: #f27121;
+  --amarilloSimpson: rgb(255, 233, 40);
+  --naranjaSimpson: rgb(253, 116, 70);
+  --azulSimpson: rgb(25, 126, 192);
+  --azulDarkSimpson: rgb(7, 76, 122);
+  --azulgrisSimpson: rgb(112, 154, 225);
+  --celesteSimpson: rgb(113, 208, 245);
+  --gradient: linear-gradient(35deg, var(--orange), var(--hotpink));
+  --gradient2:linear-gradient(185deg, var(--celesteSimpson), var(--azulSimpson));
+  --gradient3:linear-gradient(185deg, var(--azulDarkSimpson), var(--azulSimpson));
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  min-height: 100vh;
+  background-image: url(../img/ANIDOM_Simpsons_Backplate_02.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  font-family: Quicksand;
+}
