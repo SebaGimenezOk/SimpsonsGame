@@ -16,6 +16,8 @@ form.addEventListener("submit", (event) => {
     getUserData(number);
 });
 
+
+
 async function getUserData(number) {
     try {
         const response = await fetch(API + number);
@@ -25,22 +27,23 @@ async function getUserData(number) {
             );
         }
         const data = await response.json();
-        showUserData(data);
+        showUserData(data, number);
     } catch (error) {
         console.log(error);
     }
 }
 
-function showUserData(data) {
-     console.log(data);
-    const { quote, author} = data;
+
+function showUserData(data, number) {
+    console.log(data);
+    const { quote, author } = data[number - 1];
+
 
     const userData = `
-    "<div class='devuelve'>"
-     "<img class='cajafoto2' src='/img/homero-cn-lentes.png'/>"+
-      "<p>Frase:${quote}</p>"
-     "<h3>Autor:${author}</h3>""</div>"`;
-     devuelve.innerHTML = userData;
+    <div class='devuelve'>
+    <img  width=80 height=80 src='/img/homero-cn-lentes.png'/>
+    <div>
+    <h3>Frase:${quote}</h3><br>
+    <h3>Autor:${author}</h3></div></div>`;
+    devuelve.innerHTML = userData;
 }
-
-

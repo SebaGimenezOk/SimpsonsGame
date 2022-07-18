@@ -71,10 +71,11 @@ body {
 }
 .devuelve{
   display: flex;
-  padding: 9px;
   font-size: 14px;
+  padding: 1em 1em 1em 1em;
   border-radius: 23px;
   background-image:var(--gradient);
+  
 }
 
 .cabecera {
@@ -129,8 +130,8 @@ main {
 }
 
 .cajafoto {
-  max-width: max-content;
-  max-height: max-content;
+  max-width: 100;
+  max-height: 100;
   border-radius: 0.3em;
 }
 
@@ -254,10 +255,11 @@ main {
   border-radius: 10px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
-.cajafoto2{
-  width: 50%;
-  height: 50%;
-}
+/* .cajafoto2{
+  width: 30;
+  height: 30;
+  object-fit: contain;
+} */
 
 
 .modal h2 {
